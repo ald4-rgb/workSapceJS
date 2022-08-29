@@ -1,0 +1,87 @@
+/* i can  have and constants here at the top level of your script 
+   this is also called in the global scope but you can also have them 
+   inside of your function
+   and it's actually important where you define that and i'll  come back 
+   to that. fow now .Iwant to calculate a reaulst 
+*/ 
+
+const defaultResult = 0;
+let currentResult = defaultResult;
+
+//make snese instead of give me two numbers which describes what it wants to get as input
+/**
+ * so i'll go with num1 and num2 
+ * or wahterver you want
+ * 
+ * for example we can define constant  in here  as well, maybe name this result and 
+ * just add num1 and num2.
+ * 
+ * So if i would try to do something whit num1 here after the function definitionss, this 
+ * would not work 
+ * because  num1 and num2 are variables only avaible  inside of the function body    
+ * 
+ * and now what can we do with the result? Well we can for example output it with 
+ * the alert function  
+ * 
+ * this is a function built JavaScript or built into the browser and provided to you javascript
+ * 
+ * you want code once  and then rather execute it multiple  times by refferring to the function it's
+ * coded in and therefore you could have a function which is simply there to outsource some 
+ * functionalyti
+ * in this case a function that adds two pieces of information together which adds 
+ * two numbers together, so in that case, you might not want to alert or do  something
+ * inside of the function, you maybe just want to return result
+ * that's something  you can do with the return keyword which is built into javascript
+ * 
+ * 
+ */
+function add(num1,num2){
+
+    result = num1 +num2;
+   // alert('The result is '+ result);
+    return result;
+
+}
+/**Now can just use the function name 
+ * so this case add and if you picked a different name, you have to pick
+ * a different name.
+ * 
+ * So now calling our function gives us a value and that means we can store 
+ * this in a variable for example 
+ * we could say i want to have my addition result, and you can pick any name, stored  
+ * in this constant 
+ * 
+ * and i'm using a constant hare, just as i do it here in my function beacause i 
+ * never assign  a new value 
+ */
+//const additionResult = add(2,1);
+//add(6,8);
+
+/** for example we could now use addition result to set our current result equal 
+ * to it, like this , OF course  this now kind of redundant 
+ * we  sotere the result of this function call new constant just to take 
+ * the constant or the value stored
+ */
+
+//currentResult = additionResult;
+/*of course we can kind of shorten this and just set current result equal to the result 
+of our function  */    
+currentResult = add(1,2);
+
+
+//currentResult = (currentResult + 10) * 3 / 2 - 1;
+
+/**
+ * so this is how we can define our own functions with or without parameters, with 
+ * or without the return statement and how we can call them 
+ * Now of course, we're still calling this  inmmediately when this code runs 
+ *     
+ */
+
+
+
+
+let calculationDescription = `(${defaultResult}  + 10)  * 3 / 2 - 1`;
+outPutResult(currentResult, calculationDescription);
+
+

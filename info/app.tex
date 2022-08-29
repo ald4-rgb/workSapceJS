@@ -1,0 +1,35 @@
+//alert('This works')
+//staring with let key word as varaible 
+/**
+ * So to print zero here, we would  either have to do this before we execute 
+ * this line or store this initial
+ * the constan will never change 
+ */
+// the constan will never change 
+const defaultResult = 0;
+
+//now we can use the  default result here to initialize  the vairalble 
+let currentResult = defaultResult;
+currentResult = (currentResult + 10) * 3 / 2 - 1;
+//currentResult = (currentResult + 10) * 3 / 2 - 1;
+
+//this is now not a mathematical equation  which will executed by js this is treated
+//as text and therefore Javascript won't even try to execute it mathematical way.
+//we would have to do  something  which is called string concatenation which is you 
+//build a string from multiple substrings 
+//so here, we could  say this opening bracket, the opening parenthesis here,
+//that's in a string, then with the plus operator, we add current result now not between quotes
+// but just 
+//let calculationDescription = '(' + defaultResult + ' + 10) * 3 / 2 - 1';
+
+//when  be use the wuotes `` shuld be set $ and opening and closing brace
+let calculationDescription = `(${defaultResult}  + 10)  * 3 / 2 - 1`;
+//let's say we have an error  message which we don´t need for this app or for  this  website  here 
+//just to desmostrate how we work with normal, which means non-template literal strings
+// let errorMessage = "Ah error \\" + 
+//                    'ocurred!';
+
+
+//insted we can now pass  calulation description to this output result thing.
+outPutResult(currentResult, calculationDescription);
+
